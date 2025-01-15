@@ -1,6 +1,7 @@
 # IDE stuff
 .idea
 *.iml
+.vscode
 
 # build stuff
 target
@@ -8,3 +9,4 @@ target
 # python stuff
 __pycache__
 *.pyc
+.DS_Store
