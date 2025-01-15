@@ -12,7 +12,7 @@ class LRUCache
 
 	// store references of key in cache
 	std::unordered_map<int, std::list<int>::iterator> ma;
-	int csize; //maximum capacity of cache
+	long unsigned int csize; //maximum capacity of cache
 
 public:
 	LRUCache(int);
@@ -42,9 +42,9 @@ void LRUCache::refer(int x)
 	}
 	// present in cache
 	else
-  {
+  	{
 		dq.erase(ma[x]);
-  }
+  	}
 
 	// update reference
 	dq.push_front(x);

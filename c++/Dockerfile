@@ -2,8 +2,7 @@
 FROM gcc
 
 # Copy the current folder which contains C++ source code to the Docker image under /usr/src
-COPY src /usr/src/
-COPY Makefile /usr/src/
+COPY . /usr/src/
 
 # Specify the working directory
 WORKDIR /usr/src/
@@ -12,4 +11,4 @@ WORKDIR /usr/src/
 RUN make
 
 # Run the program output from the previous step
-CMD ["./lru_cpp"]
+CMD ["./target/lru_cpp"]

@@ -1,4 +1,6 @@
-TARGET=$(CURDIR)/target
+TARGET=./target
+CXX=g++
+CXXFLAGS=-std=c++11 -g -Wall -Werror
 
 dummy:=$(shell mkdir -p $(TARGET))
 
